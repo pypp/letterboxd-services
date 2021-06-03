@@ -7,7 +7,8 @@ _more sites will be supported soon_
 
 - Yify
 - Rarbg
-- 1337x Torrent
+- 1337x Torrents
+- Lime Torrents
 
 ## Screenshots
 

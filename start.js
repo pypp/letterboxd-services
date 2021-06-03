@@ -15,6 +15,11 @@ getServices = (title) => {
       url: `https://www.1377x.to/search/${title}/1`,
       icon: "https://1337xto.to/images/logo.svg",
     },
+    {
+      name: "Lime Torrents",
+      url: `https://limetorrents.cyou/search.php?cat=201&q=${title}`,
+      icon: "https://limetorrents.cyou/favicon.ico",
+    },
   ];
 };
 
