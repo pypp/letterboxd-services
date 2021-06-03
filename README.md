@@ -14,4 +14,3 @@ _more sites will be supported soon_
 ![full page](imgs/img1.png)
 
 ![panel](imgs/img2.png)
-# letterboxd-services
