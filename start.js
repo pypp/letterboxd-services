@@ -79,10 +79,6 @@ main = () => {
   }
 };
 
-chrome.runtime.onMessage.addListener((request) => {
-  location.reload();
-  if (request)
-    window.onload = () => {
-      main();
-    };
-});
+window.onload = () => {
+  main();
+};

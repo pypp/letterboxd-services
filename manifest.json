@@ -3,10 +3,6 @@
     "name": "Letterboxd Services",
     "description": "Chrome extension that provides you torrents for movies.",
     "version": "0.1",
-    "action": {
-        "default_popup": "template/popup.html",
-        "default_icon": "imgs/icons/icon128.png"
-    },
     "icons": {
         "16": "imgs/icons/icon16.png",
         "48": "imgs/icons/icon48.png",
@@ -22,8 +18,5 @@
                 "start.js"
             ]
         }
-    ],
-    "permissions": [
-        "tabs"
     ]
 }
