@@ -71,19 +71,22 @@ init = (num) => {
   document.head.appendChild(styleSheet);
 };
 
+
 main = () => {
   let servicesPanel = document.getElementsByClassName("services")[0];
-  if (!servicesPanel) return; // if the page doesn't have a services tag return
-
-  hideOther();
-  let services = getServices(getTitle());
-  init(services.length);
-
-  for (const service of services) {
-    addService(service);
+  if (servicesPanel) {
+    hideOther();
+    let services = getServices(getTitle());
+    init(services.length);
+  
+    for (const service of services) {
+      addService(service);
+    }
+  } else {
+    if (document.readyState != "complete")
+      setTimeout(main, 15);
   }
 };
 
-window.onload = () => {
-  main();
-};
+
+main();
