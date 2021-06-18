@@ -42,4 +42,4 @@ straight through letterboxd movie page.
 
 3. Click **Temporary Extensions**
 
-4. Click the **Load Temporary Add-on…** and select the **start.js** file from the cloned repo.
+4. Click the **Load Temporary Add-on…** and select the **manifest.json** file from the cloned repo.
