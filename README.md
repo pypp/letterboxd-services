@@ -1,7 +1,7 @@
   <h3 align="center">Letterboxd-Serivces</h3>
 
   <p align="center">
-    Chrome extension for letterboxd that provides you torrents for movies.
+    Letterboxd Extension that provides you torrents for movies.
     <br />
     <br />
 
@@ -9,9 +9,9 @@
 
 <br />
 
-![full page](imgs/screenshot.png)
+![full page](screenshot.png)
 
-Letterboxd-Serivces is a Chrome extension that will make your life easier by providing you torrents to movies
+Letterboxd-Serivces is a Chrome/Safari extension that will make your life easier by providing you torrents to movies
 straight through letterboxd movie page.
 
 ## Supported Services
@@ -23,14 +23,23 @@ straight through letterboxd movie page.
 
 <br />
 
-## Getting Started
-
-### Installation
+## Installation
 
 1. Clone the repo
    ```sh
    git clone https://github.com/1netanel/letterboxd-services.git
    ```
-2. Open Chrome and Go to **chrome://extensions**
+
+### Chrome
+
+2. Open Chrome and go to **chrome://extensions**
 
 3. Click the **Load unpacked extension** button and select the folder of the cloned repo.
+
+### Safari
+
+2. Open Safari and go to **about:debugging#addons**
+
+3. Click **Temporary Extensions**
+
+4. Click the **Load Temporary Add-on…** and select the **start.js** file from the cloned repo.
