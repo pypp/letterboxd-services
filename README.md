@@ -29,8 +29,6 @@ straight through [Letterboxd](https://letterboxd.com/) movie page.
 - 1337x Torrents
 - Lime Torrents
 
-<br />
-
 ## Installation
 
 <!-- Download it from the [Chrome Web Store]() or [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-services/). -->
