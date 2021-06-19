@@ -18,24 +18,29 @@
 ![full page](screenshots/screenshot.png)
 <br/>
 
-Letterboxd-Serivces is a Chrome/Safari extension that will make your life easier by providing you torrents to movies
+Letterboxd-Serivces is a Chrome/Firefox extension that will make your life easier by providing you torrents to movies
 straight through [Letterboxd](https://letterboxd.com/) movie page.
-**PRs are welcome.**
+**Issues/PRs are welcome.**
 
-## Supported torrent providers
+## How to Use
 
-- Yify
-- Rarbg
-- 1337x Torrents
-- Lime Torrents
+<!-- To use the extension, download it from the [Chrome Web Store]() or [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-services/).<br/> -->
 
-## Installation
+To use the extension, download it from the [Firefox Add-ons Store]().<br/>
+Alternatively, you can also install the extension [manualy](#manual-installation).
 
-<!-- Download it from the [Chrome Web Store]() or [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-services/). -->
+<br/>
 
-To use the extension, download it from the [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-services/).
+## Supported Torrent Providers
 
-### Alternatively
+- ![Yify](https://yts.mx/assets/images/website/favicon.ico) &nbsp; Yify
+- ![Rarbg](https://rarbg.to/favicon.ico) &nbsp; Rarbg
+- ![1337x](https://1337xto.to/images/favicon.ico) &nbsp; 1337x
+- ![Lime Torrents](https://limetorrents.cyou/favicon.ico) &nbsp; Lime Torrents
+
+<br/>
+
+## Manual Installation
 
 1. Clone the repo
    ```sh
@@ -50,9 +55,9 @@ To use the extension, download it from the [Firefox Add-ons Store](https://addon
 
 4. Click the **Load unpacked extension** button and select the folder of the cloned repo.
 
-### Safari
+### Firefox
 
-2. Open Safari and go to **about:debugging#addons**
+2. Open Firefox and go to **about:debugging#addons**
 
 3. Click **Temporary Extensions**
 
