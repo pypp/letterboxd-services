@@ -33,7 +33,7 @@ straight through [Letterboxd](https://letterboxd.com/) movie page.
 
 <!-- Download it from the [Chrome Web Store]() or [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-services/). -->
 
-Download it from the [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-services/).
+To use the extension, download it from the [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-services/).
 
 ### Alternatively
 
