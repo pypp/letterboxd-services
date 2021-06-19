@@ -1,3 +1,9 @@
+<br />
+<p align="center">
+  <a href="https://github.com/1netanel/letterboxd-services.git">
+    <img src="icon.svg" alt="Logo" width="80" height="80">
+  </a>  
+  
   <h3 align="center">Letterboxd-Serivces</h3>
 
   <p align="center">
@@ -12,7 +18,7 @@
 ![full page](screenshot.png)
 
 Letterboxd-Serivces is a Chrome/Safari extension that will make your life easier by providing you torrents to movies
-straight through letterboxd movie page.
+straight through [Letterboxd](https://www.example.com/my%20great%20page) movie page.
 
 ## Supported Services
 
