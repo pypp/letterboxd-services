@@ -18,9 +18,10 @@
 ![full page](screenshot.png)
 
 Letterboxd-Serivces is a Chrome/Safari extension that will make your life easier by providing you torrents to movies
-straight through [Letterboxd](https://www.example.com/my%20great%20page) movie page.
+straight through [Letterboxd](https://letterboxd.com/) movie page.
+**PRs are welcome.**
 
-## Supported Services
+## Supported torrent providers
 
 - Yify
 - Rarbg
@@ -49,5 +50,3 @@ straight through [Letterboxd](https://www.example.com/my%20great%20page) movie p
 3. Click **Temporary Extensions**
 
 4. Click the **Load Temporary Add-on…** and select the **manifest.json** file from the cloned repo.
-
-**PRs are welcome.**
