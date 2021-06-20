@@ -15,7 +15,9 @@
 
 <br />
 
-![full page](screenshots/screenshot.png)
+![preview](screenshots/screenshot2.png)
+
+<!-- ![full page](screenshots/screenshot.png) -->
 <br/>
 
 Letterboxd Torrent Provider is a Chrome/Firefox extension that will make your life easier by providing you torrents for movies traight through [letterboxd](https://letterboxd.com/) movie page.
@@ -43,8 +45,6 @@ Alternatively, you can also install the extension [manualy](#manual-installation
 ## Usage
 
 ![Demo video](screenshots/example.gif)
-
-![example](screenshots/screenshot2.png)
 
 ## Contributing
 
