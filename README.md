@@ -15,7 +15,7 @@
 
 <br />
 
-![preview](screenshots/screenshot2.png)
+![previewv](screenshots/screenshot2.png)
 
 <!-- ![full page](screenshots/screenshot.png) -->
 <br/>
@@ -29,8 +29,6 @@ Letterboxd Torrent Provider is a Chrome/Firefox extension that will make your li
 To use the extension, download it from the [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-torrent-provider/).  
 Alternatively, you can also install the extension [manualy](#manual-installation).
 
-<br/>
-
 ## Supported Torrent Providers
 
 - ![Yify](https://yts.mx/assets/images/website/favicon.ico) &nbsp; Yify
@@ -42,7 +40,7 @@ Alternatively, you can also install the extension [manualy](#manual-installation
 
 [MIT](LICENSE)
 
-## Usage
+## Example
 
 ![Demo video](screenshots/example.gif)
 
