@@ -36,13 +36,13 @@ Alternatively, you can also install the extension [manualy](#manual-installation
 - ![1337x](https://1337xto.to/images/favicon.ico) &nbsp; 1337x
 - ![Lime Torrents](https://limetorrents.cyou/favicon.ico) &nbsp; Lime Torrents
 
-## License
-
-[MIT](LICENSE)
-
 ## Example
 
 ![Demo video](screenshots/example.gif)
+
+## License
+
+[MIT](LICENSE)
 
 ## Contributing
 
