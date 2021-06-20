@@ -1,10 +1,10 @@
 <br />
 <p align="center">
-  <a href="https://github.com/1netanel/letterboxd-services.git">
+  <a href="https://github.com/1netanel/letterboxd-torrent-provider.git">
     <img src="icon.svg" alt="Logo" width="80" height="80">
   </a>  
   
-  <h3 align="center">Letterboxd-Serivces</h3>
+  <h3 align="center">Letterboxd Torrent Provider</h3>
 
   <p align="center">
     Letterboxd Extension that provides you torrents for movies.
@@ -18,15 +18,15 @@
 ![full page](screenshots/screenshot.png)
 <br/>
 
-Letterboxd-Serivces is a Chrome/Firefox extension that will make your life easier by providing you torrents to movies
+Chrome/Firefox extension that will make your life easier by providing you torrents for movies
 straight through [Letterboxd](https://letterboxd.com/) movie page.
 **Issues/PRs are welcome.**
 
 ## How to Use
 
-<!-- To use the extension, download it from the [Chrome Web Store]() or [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-services/).<br/> -->
+<!-- To use the extension, download it from the [Chrome Web Store]() or [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-torrent-provider/).<br/> -->
 
-To use the extension, download it from the [Firefox Add-ons Store]().<br/>
+To use the extension, download it from the [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-torrent-provider/).  
 Alternatively, you can also install the extension [manualy](#manual-installation).
 
 <br/>
@@ -44,14 +44,14 @@ Alternatively, you can also install the extension [manualy](#manual-installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/1netanel/letterboxd-services.git
+   git clone https://github.com/1netanel/letterboxd-torrent-provider.git
    ```
 
 ### Chrome
 
 2. Open Chrome and go to **chrome://extensions**
 
-3. Turn on **Developer mode** checkbox in the top right-hand corner.
+3. Toggle on **Developer mode** checkbox in the top right-hand corner.
 
 4. Click the **Load unpacked extension** button and select the folder of the cloned repo.
 
