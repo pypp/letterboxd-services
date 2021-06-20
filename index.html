@@ -44,49 +44,64 @@
 
 
         main {
-            margin-top: 0;
+            padding-top: 6%;
         }
 
-        .left-side {
-            float: left;
-            margin-left: 4em;
+        .right-side {
+            float: right;
+            margin-right: 4em;
         }
 
-
-        .left-side li {
+        .right-side li {
             font-size: 80%;
             margin-left: 2em;
+            text-align: center;
             display: inline-block;
             list-style-type: none;
-            padding-top: 1rem;
-            text-align: center;
+            padding: .5% 0;
             border-radius: .8em;
-            width: 10%;
+            width: 50%;
             height: 5vh;
-            background: black;
+            background: #000;
             border: 1px solid grey;
         }
 
 
-        .left-side li svg {
+        .right-side li svg {
             padding-right: .5em;
             vertical-align: middle;
             margin-bottom: 0.2em;
         }
 
         .screenshot {
-            margin-right: 5em;
-            float: right;
+            margin-left: 5em;
+            float: left;
             width: 45%;
-            box-shadow: 10px 10px 20px #000;
+            box-shadow: 5px 5px 10px #000;
         }
 
         @media screen and (max-width: 600px) {
+            header {
+                font-size: 10px;
+            }
+
             header h1 a img {
                 margin: auto;
                 display: block;
                 margin-bottom: .5em;
-                width: 60px;
+                width: 40px;
+            }
+
+            main {
+                padding-top: 15%;
+            }
+
+            .screenshot {
+                display: block;
+                margin: 0 auto;
+                width: 75%;
+                float: none;
+                /* box-shadow: none; */
             }
         }
     </style>
@@ -94,25 +109,25 @@
 
 <body>
     <header>
-        <h1>
-            <a href="./">
-                <img src="icon.svg" alt="icon" />
-                Letterboxd Torrent Provider
-            </a>
-        </h1>
+        <h1><a href="./"><img src="icon.svg" alt="icon" />Letterboxd Torrent Provider</a></h1>
     </header>
+
     <main>
-        <div class="left-side">
+        <img class="screenshot" src="screenshots/screenshot.png" alt="screenshot of the extension being in used.">
+
+        <div class="right-side">
             <h2>Try now</h2>
             <ul>
                 <li class="get-chrome">
-                    <a target=”_blank” href="#">
-                        <svg aria-hidden="true" width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                            <path fill="currentColor"
-                                d="M132 218L55 100a248 248 0 01414 44l-205-11c-58-3-113 30-132 85zm32 38a84 84 0 10168 0 84 84 0 00-168 0zm315-89l-139 7c38 44 38 108 6 157L234 504c47 2 95-8 138-33 107-62 151-192 107-304zM134 304L40 120a248 248 0 00170 381l63-125c-57 11-113-21-139-72z" />
-                        </svg>
-                        Chrome
-                    </a>
+                    <div class="inner">
+                        <a target=”_blank” href="#">
+                            <svg aria-hidden="true" width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <path fill="currentColor"
+                                    d="M132 218L55 100a248 248 0 01414 44l-205-11c-58-3-113 30-132 85zm32 38a84 84 0 10168 0 84 84 0 00-168 0zm315-89l-139 7c38 44 38 108 6 157L234 504c47 2 95-8 138-33 107-62 151-192 107-304zM134 304L40 120a248 248 0 00170 381l63-125c-57 11-113-21-139-72z" />
+                            </svg>
+                            Chrome
+                        </a>
+                    </div>
                 </li>
 
                 <li class="get-firefox">
@@ -124,13 +139,11 @@
                         </svg>
                         Firefox
                     </a>
-
                 </li>
             </ul>
+        </div>
 
-            <!-- </div> -->
 
-            <img class="screenshot" src="screenshots/screenshot.png" alt="screenshot of the extension being in used.">
     </main>
 
 </body>

@@ -20,7 +20,6 @@
 
 Chrome/Firefox extension that will make your life easier by providing you torrents for movies
 straight through [Letterboxd](https://letterboxd.com/) movie page.
-**Issues/PRs are welcome.**
 
 ## How to Use
 
@@ -38,7 +37,19 @@ Alternatively, you can also install the extension [manualy](#manual-installation
 - ![1337x](https://1337xto.to/images/favicon.ico) &nbsp; 1337x
 - ![Lime Torrents](https://limetorrents.cyou/favicon.ico) &nbsp; Lime Torrents
 
-<br/>
+## License
+
+[MIT](LICENSE)
+
+## Usage
+
+<!-- [Demo video](screenshots/example.gif) -->
+
+![example](screenshots/screenshot2.png)
+
+## Contributing
+
+Pull requests and issues are welcome.
 
 ## Manual Installation
 
@@ -62,9 +73,3 @@ Alternatively, you can also install the extension [manualy](#manual-installation
 3. Click **Temporary Extensions**
 
 4. Click the **Load Temporary Add-on…** and select the **manifest.json** file from the cloned repo.
-
-<br/>
-
-## Screenshots
-
-![example](screenshots/screenshot2.png)
