@@ -10,7 +10,7 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 
         body {
             font-family: "Poppins";
@@ -49,9 +49,11 @@
 
         .right-side {
             padding: 2em;
-            margin: 3em 8em 0 4em;
-            height: 30vh;
+            margin: 1% 5em 0 0;
+            height: 35vh;
+            min-height: 30vh;
             float: right;
+            width: 30%;
             /* border: 1px solid white; */
         }
 
@@ -60,8 +62,22 @@
         }
 
         .right-side h1 {
-            font-weight: bold;
+            font-weight: bolder;
             margin: 0;
+            line-height: 1.2em;
+        }
+
+        .right-side p {
+            line-height: 1.3em;
+            padding-top: .5em;
+            font-weight: 300;
+            font-size: larger;
+            margin-top: 1%;
+            margin-bottom: 4%;
+        }
+
+        .right-side h2 {
+            margin: 6% 0 3% 0;
         }
 
         .get:hover>a svg path {
@@ -69,6 +85,7 @@
         }
 
         .get:hover {
+            color: #4ee44e;
             border-color: #4ee44e;
             cursor: pointer;
         }
@@ -173,13 +190,14 @@
     </header>
 
     <main>
-        <img class="screenshot" src="screenshots/example.gif" alt="screenshot of the extension being in used.">
+        <img class="screenshot" src="screenshots/example.gif" alt="screenshot of the extension being in used."
+            loading="lazy">
 
         <div class="right-side">
-            <h1>Get torrents on Letterboxd</h1>
-
+            <h1>Get torrent providers directly from Letterboxd</h1>
+            <p>add now to get torrents directly from Letterboxd movie pages.</p>
+            <h2>Try now</h2>
             <div class="get-now">
-                <h2>Try now</h2>
                 <ul>
                     <li class="get">
                         <a target=”_blank” href="#">
@@ -211,6 +229,8 @@
                     </li>
                 </ul>
             </div>
+
+
         </div>
 
     </main>
