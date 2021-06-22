@@ -24,9 +24,7 @@ Letterboxd Torrent Provider is a Chrome/Firefox extension that will make your li
 
 ## How to Use
 
-<!-- To use the extension, download it from the [Chrome Web Store]() or [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-torrent-provider/).<br/> -->
-
-To use the extension, download it from the [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-torrent-provider/).  
+To use the extension, download it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/letterboxd-services/bagfenoehphiafohgapgncflpagoekol?hl=iw&authuser=0) or [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-torrent-provider/).  
 Alternatively, you can also install the extension [manualy](#manual-installation).
 
 ## Supported Torrent Providers
