@@ -16,8 +16,6 @@
 <br />
 
 ![previewv](screenshots/screenshot2.png)
-
-<!-- ![full page](screenshots/screenshot.png) -->
 <br/>
 
 Letterboxd Torrent Provider is a Chrome/Firefox extension that will make your life easier by providing you torrents for movies traight through [letterboxd](https://letterboxd.com/) movie page.
@@ -59,7 +57,7 @@ Pull requests and issues are welcome.
 
 3. Toggle on **Developer mode** checkbox in the top right-hand corner.
 
-4. Click the **Load unpacked extension** button and select the folder of the cloned repo.
+4. Click the **Load unpacked extension** button and select the folder **chrome-firefox**.
 
 ### Firefox
 
@@ -67,4 +65,4 @@ Pull requests and issues are welcome.
 
 3. Click **Temporary Extensions**
 
-4. Click the **Load Temporary Add-on…** and select the **manifest.json** file from the cloned repo.
+4. Click the **Load Temporary Add-on…** and select the **manifest.json** file from the folder **chrome-firefox**.
