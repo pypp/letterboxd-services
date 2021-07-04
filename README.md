@@ -1,10 +1,10 @@
 <br />
 <p align="center">
-  <a href="https://github.com/1netanel/letterboxd-torrent-provider.git">
+  <a href="https://github.com/1netanel/letterboxd-services.git">
     <img src="icon.svg" alt="Logo" width="80" height="80">
   </a>  
   
-  <h3 align="center">Letterboxd Torrent Provider</h3>
+  <h3 align="center">Letterboxd Services</h3>
 
   <p align="center">
     Letterboxd Extension that provides you torrents for movies.
@@ -18,7 +18,7 @@
 ![previewv](screenshots/screenshot2.png)
 <br/>
 
-Letterboxd Torrent Provider is a Chrome/Firefox extension that will make your life easier by providing you torrents for movies traight through [letterboxd](https://letterboxd.com/) movie page.
+Letterboxd Services is a Chrome/Firefox extension that will make your life easier by providing you torrents for movies traight through [letterboxd](https://letterboxd.com/) movie page.
 
 ## How to Use
 
