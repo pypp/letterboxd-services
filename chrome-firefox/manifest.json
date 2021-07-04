@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Letterboxd Services",
     "description": "Letterboxd extension that provides you helps you watch movies.",
-    "version": "0.2",
+    "version": "0.3",
     "icons": {
         "16": "icons/icon16.png",
         "48": "icons/icon48.png",
