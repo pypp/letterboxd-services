@@ -48,7 +48,7 @@ Pull requests and issues are welcome.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/1netanel/letterboxd-torrent-provider.git
+   git clone https://github.com/1netanel/letterboxd-services.git
    ```
 
 ### Chrome
