@@ -1,4 +1,4 @@
-getServices = (title) => {
+const getServices = (title) => {
   return [
     {
       name: "Yify",
@@ -23,7 +23,7 @@ getServices = (title) => {
   ];
 };
 
-addService = (service) => {
+const addService = (service) => {
   let services = document.getElementsByClassName("services")[0];
 
   services.innerHTML += `
@@ -40,7 +40,7 @@ addService = (service) => {
 	`;
 };
 
-hideOther = () => {
+const hideOther = () => {
   let servicesPanel = document.getElementsByClassName("services")[0];
   servicesPanel.innerHTML = ""; // removes services content
   document.querySelectorAll(".other").forEach((a) => {
@@ -48,7 +48,7 @@ hideOther = () => {
   });
 };
 
-getTitle = () => {
+const getTitle = () => {
   let title = document.getElementsByClassName(
     "headline-1 js-widont prettify"
   )[0].innerText;
@@ -60,7 +60,7 @@ getTitle = () => {
   return `${title} ${year}`;
 };
 
-init = (num) => {
+const init = (num) => {
   var styles = `
 .watch-panel .services>.service:nth-child(n+${num}) {
   display: block !important;
@@ -71,22 +71,19 @@ init = (num) => {
   document.head.appendChild(styleSheet);
 };
 
-
-main = () => {
+const main = () => {
   let servicesPanel = document.getElementsByClassName("services")[0];
   if (servicesPanel) {
     hideOther();
     let services = getServices(getTitle());
     init(services.length);
-  
+
     for (const service of services) {
       addService(service);
     }
   } else {
-    if (document.readyState != "complete")
-      setTimeout(main, 15);
+    if (document.readyState != "complete") setTimeout(main, 15);
   }
 };
-
 
 main();
