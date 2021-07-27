@@ -2,8 +2,8 @@ const getServices = (title) => {
   return [
     {
       name: "Yify",
-      url: `https://yts.mx/browse-movies/${title}`,
-      icon: "https://yts.mx/assets/images/website/favicon.ico",
+      url: `https://yts.rs/browse-movies/${title}`,
+      icon: "https://yts.rs/assets/images/website/favicon.ico",
     },
     {
       name: "Rarbg",
