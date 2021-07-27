@@ -29,7 +29,7 @@ Alternatively, you can also install the extension [manualy](#manual-installation
 
 ## Supported Torrent Providers
 
-- ![Yify](https://yts.mx/assets/images/website/favicon.ico) &nbsp; Yify
+- ![Yify](https://yts.rs/images/favicon.ico) &nbsp; Yify
 - ![Rarbg](https://rarbg.to/favicon.ico) &nbsp; Rarbg
 - ![1337x](https://1337xto.to/images/favicon.ico) &nbsp; 1337x
 - ![Lime Torrents](https://limetorrents.cyou/favicon.ico) &nbsp; Lime Torrents
