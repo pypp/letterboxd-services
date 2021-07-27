@@ -1,9 +1,8 @@
-const getServices = (title) => {
   return [
     {
       name: "Yify",
       url: `https://yts.rs/browse-movies/${title}`,
-      icon: "https://yts.rs/assets/images/website/favicon.ico",
+      icon: "https://yts.rs/images/favicon.ico",
     },
     {
       name: "Rarbg",
