@@ -18,16 +18,18 @@
 ![previewv](screenshots/screenshot2.png)
 <br/>
 
+Idea is taken from [here](https://github.com/Hame-daani/letterboxd_util).   
+
 Letterboxd Services is a Chrome/Firefox extension that will make your life easier by providing you torrents for movies traight through [letterboxd](https://letterboxd.com/) movie page.
 
 ## How to Use
 
-To use the extension, download it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/letterboxd-services/bagfenoehphiafohgapgncflpagoekol?hl=iw&authuser=0) or [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-services/).  
+To use the extension, download it from the Chrome Web Store (it got removed from the chrome webstore, you can still download it [manualy](#manual-installation)) or [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-services/).  
 Alternatively, you can also install the extension [manualy](#manual-installation).
 
 ## Supported Providers
 
-- ![Yify](https://yts.mx/assets/images/website/favicon.ico) &nbsp; Yify
+- ![Yify](https://yts.rs/images/favicon.ico) &nbsp; Yify
 - ![Rarbg](https://rarbg.to/favicon.ico) &nbsp; Rarbg
 - ![1337x](https://1337xto.to/images/favicon.ico) &nbsp; 1337x
 - ![Lime Torrents](https://limetorrents.cyou/favicon.ico) &nbsp; Lime Torrents
