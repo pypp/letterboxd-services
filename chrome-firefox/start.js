@@ -20,6 +20,11 @@ const getServices = (title) => {
       url: `https://limetorrents.cyou/search.php?cat=201&q=${title}`,
       icon: "https://limetorrents.cyou/favicon.ico",
     },
+    {
+      name: "YouTube",
+      url: `https://www.youtube.com/results?search_query=${title}`,
+      icon: "https://www.youtube.com/favicon.ico",
+    },
   ];
 };
 

@@ -25,12 +25,13 @@ Letterboxd Services is a Chrome/Firefox extension that will make your life easie
 To use the extension, download it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/letterboxd-services/bagfenoehphiafohgapgncflpagoekol?hl=iw&authuser=0) or [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-services/).  
 Alternatively, you can also install the extension [manualy](#manual-installation).
 
-## Supported Torrent Providers
+## Supported Providers
 
 - ![Yify](https://yts.mx/assets/images/website/favicon.ico) &nbsp; Yify
 - ![Rarbg](https://rarbg.to/favicon.ico) &nbsp; Rarbg
 - ![1337x](https://1337xto.to/images/favicon.ico) &nbsp; 1337x
 - ![Lime Torrents](https://limetorrents.cyou/favicon.ico) &nbsp; Lime Torrents
+- ![YouTube](https://www.youtube.com/favicon.ico) &nbsp; YouTube
 
 ## Example
 
