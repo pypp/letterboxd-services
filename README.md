@@ -18,7 +18,7 @@
 ![previewv](screenshots/screenshot2.png)
 <br/>
 
-Idea is taken from [here](https://github.com/Hame-daani/letterboxd_util).   
+Idea is taken from [here](https://github.com/Hame-daani/letterboxd_util).
 
 Letterboxd Services is a Chrome/Firefox extension that will make your life easier by providing you torrents for movies traight through [letterboxd](https://letterboxd.com/) movie page.
 
