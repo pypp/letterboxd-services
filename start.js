@@ -1,4 +1,4 @@
-const getServices = (title) => {
+getServices = (title) => {
   return [
     {
       name: "Yify",
@@ -13,22 +13,17 @@ const getServices = (title) => {
     {
       name: "1337x",
       url: `https://www.1377x.to/search/${title}/1`,
-      icon: "https://1337xto.to/images/favicon.ico",
+      icon: "https://1337xto.to/images/logo.svg",
     },
     {
       name: "Lime Torrents",
       url: `https://limetorrents.cyou/search.php?cat=201&q=${title}`,
       icon: "https://limetorrents.cyou/favicon.ico",
     },
-    {
-      name: "YouTube",
-      url: `https://www.youtube.com/results?search_query=${title}`,
-      icon: "https://www.youtube.com/favicon.ico",
-    },
   ];
 };
 
-const addService = (service) => {
+addService = (service) => {
   let services = document.getElementsByClassName("services")[0];
 
   services.innerHTML += `
@@ -45,7 +40,7 @@ const addService = (service) => {
 	`;
 };
 
-const hideOther = () => {
+hideOther = () => {
   let servicesPanel = document.getElementsByClassName("services")[0];
   servicesPanel.innerHTML = ""; // removes services content
   document.querySelectorAll(".other").forEach((a) => {
@@ -53,7 +48,7 @@ const hideOther = () => {
   });
 };
 
-const getTitle = () => {
+getTitle = () => {
   let title = document.getElementsByClassName(
     "headline-1 js-widont prettify"
   )[0].innerText;
@@ -65,7 +60,7 @@ const getTitle = () => {
   return `${title} ${year}`;
 };
 
-const init = (num) => {
+init = (num) => {
   var styles = `
 .watch-panel .services>.service:nth-child(n+${num}) {
   display: block !important;
@@ -76,24 +71,22 @@ const init = (num) => {
   document.head.appendChild(styleSheet);
 };
 
-const insertServices = () => {
-  hideOther();
-  let services = getServices(getTitle());
-  init(services.length);
 
-  for (const service of services) {
-    addService(service);
+main = () => {
+  let servicesPanel = document.getElementsByClassName("services")[0];
+  if (servicesPanel) {
+    hideOther();
+    let services = getServices(getTitle());
+    init(services.length);
+  
+    for (const service of services) {
+      addService(service);
+    }
+  } else {
+    if (document.readyState != "complete")
+      setTimeout(main, 15);
   }
 };
 
-const main = () => {
-  const intervalID = setInterval(() => {
-    const servicesPanel = document.getElementsByClassName("services")[0];
-    if (servicesPanel) {
-      insertServices();
-      clearInterval(intervalID);
-    }
-  }, 100);
-};
 
 main();

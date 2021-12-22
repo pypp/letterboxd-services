@@ -1,12 +1,12 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Letterboxd Services",
-    "description": "Letterboxd extension that provides you helps you watch movies.",
-    "version": "0.4",
+    "description": "Chrome extension that provides you torrents for movies.",
+    "version": "0.1",
     "icons": {
-        "16": "icons/icon16.png",
-        "48": "icons/icon48.png",
-        "128": "icons/icon128.png"
+        "16": "imgs/icons/icon16.png",
+        "48": "imgs/icons/icon48.png",
+        "128": "imgs/icons/icon128.png"
     },
     "content_scripts": [
         {
