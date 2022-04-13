@@ -29,11 +29,12 @@ Alternatively, you can also install the extension [manualy](#manual-installation
 
 ## Supported Providers
 
-- ![Yify](https://yts.rs/images/favicon.ico) &nbsp; Yify
-- ![Rarbg](https://rarbg.to/favicon.ico) &nbsp; Rarbg
-- ![1337x](https://1337xto.to/images/favicon.ico) &nbsp; 1337x
-- ![Lime Torrents](https://limetorrents.cyou/favicon.ico) &nbsp; Lime Torrents
-- ![YouTube](https://www.youtube.com/favicon.ico) &nbsp; YouTube
+- <img src="https://yts.rs/images/favicon.ico" alt="Yify" /> &nbsp; Yify
+- <img src="https://rarbg.to/favicon.ico" alt="Rarbg" /> &nbsp; Rarbg
+- <img src="https://1337xto.to/images/favicon.ico" alt="1337x" /> &nbsp; 1337x
+- <img src="https://limetorrents.cyou/favicon.ico" alt="Lime Torrents" width="16"/> &nbsp; Lime Torrents
+- <img src="https://nyaa.si/static/favicon.png" alt="Nyaa" width="16"/> &nbsp; Nyaa
+- <img src="https://www.youtube.com/favicon.ico" alt="YouTube" width="16"/> &nbsp; YouTube
 
 ## Example
 
@@ -50,6 +51,7 @@ Pull requests and issues are welcome.
 ## Manual Installation
 
 1. Clone the repo
+
    ```sh
    git clone https://github.com/1netanel/letterboxd-services.git
    ```
