@@ -92,13 +92,24 @@ const insertServices = () => {
 };
 
 const main = () => {
-  const intervalID = setInterval(() => {
-    const servicesPanel = document.getElementsByClassName("services")[0];
-    if (servicesPanel) {
+  const interval = setInterval(() => {
+    const watchDiv = document.getElementById("watch");
+
+    if (watchDiv) {
+      clearInterval(interval);
+      const servicesPanel = watchDiv.getElementsByClassName("services")[0];
+
+      if (!servicesPanel) {
+        var section = document.createElement("SECTION");
+        section.classList.add("services");
+        watchDiv.append(section);
+      }
+
       insertServices();
-      clearInterval(intervalID);
     }
   }, 100);
+
+  setTimeout(() => clearInterval(interval), 7000);
 };
 
 main();
