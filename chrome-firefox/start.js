@@ -1,38 +1,52 @@
-const getServices = (title) => [
+const getServices = (query, imdbID) => [
   {
     name: "Yify",
-    url: `https://yts.mx/browse-movies/${title}`,
+    url: `https://yts.mx/browse-movies/${query}`,
     icon: "https://yts.mx/assets/images/website/favicon.ico",
   },
   {
     name: "Rarbg",
-    url: `https://rarbgtor.org/torrents.php?category=movies&search=${title}`,
+    url: `https://rarbgtor.org/torrents.php?category=movies&search=${imdbID}`,
     icon: "https://rarbg.to/favicon.ico",
   },
   {
+    name: "The Pirate Bay",
+    url: `https://thepiratebay.org/search.php?q=${imdbID}&video=on`,
+    icon: "https://thepiratebay.org/favicon.ico",
+  },
+  {
     name: "1337x",
-    url: `https://www.1377x.to/search/${title}/1`,
+    url: `https://www.1377x.to/search/${query}/1`,
     icon: "https://1337xto.to/images/favicon.ico",
   },
   {
     name: "Lime Torrents",
-    url: `https://limetorrents.cyou/search.php?cat=201&q=${title}`,
+    url: `https://limetorrents.cyou/search.php?cat=201&q=${query}`,
     icon: "https://limetorrents.cyou/favicon.ico",
   },
   {
     name: "Nyaa",
-    url: `https://nyaa.si/?f=0&c=0_0&q=${title}`,
+    url: `https://nyaa.si/?f=0&c=0_0&q=${query}`,
     icon: "https://nyaa.si/static/favicon.png",
   },
   {
     name: "YouTube",
-    url: `https://www.youtube.com/results?search_query=${title}`,
+    url: `https://www.youtube.com/results?search_query=${query}`,
     icon: "https://www.youtube.com/favicon.ico",
   },
 ];
 
+const createServicePanel = (panel) => {
+  document.getElementById("js-poster-col").append(panel);
+};
+
+const getImdbID = () => {
+  const url = document.querySelector(".micro-button")?.href;
+  return url.split("/")[4];
+};
+
 const addService = (service) => {
-  const services = document.getElementsByClassName("services")[0];
+  const services = document.querySelector(".services");
 
   services.innerHTML += `
 		<p class="service">
@@ -49,22 +63,17 @@ const addService = (service) => {
 };
 
 const hideOther = () => {
-  const servicesPanel = document.getElementsByClassName("services")[0];
-  servicesPanel.innerHTML = ""; // removes services content
+  document.querySelector(".services").innerHTML = "";
+
   document.querySelectorAll(".other").forEach((a) => {
     a.remove(); // removes every element with the class 'other'
   });
 };
 
 const getQuery = () => {
-  const title = document.getElementsByClassName(
-    "headline-1 js-widont prettify"
-  )[0].innerText;
-
-  const year = document
-    .getElementsByClassName("number")[0]
-    .getElementsByTagName("a")[0].innerText;
-
+  const header = document.getElementById("featured-film-header");
+  const title = header.querySelector("h1").innerText;
+  const year = header.querySelector("p > small > a").innerText;
   return `${title} ${year}`;
 };
 
@@ -83,7 +92,8 @@ const init = () => {
 const insertServices = () => {
   hideOther();
   const query = getQuery();
-  const services = getServices(query);
+  const imdbID = getImdbID();
+  const services = getServices(query, imdbID);
   init();
 
   for (const service of services) {
@@ -92,24 +102,26 @@ const insertServices = () => {
 };
 
 const main = () => {
-  const interval = setInterval(() => {
-    const watchDiv = document.getElementById("watch");
+  const watchDiv = document.getElementById("watch");
+  const servicesPanel = watchDiv.querySelector(".services");
 
-    if (watchDiv) {
-      clearInterval(interval);
-      const servicesPanel = watchDiv.getElementsByClassName("services")[0];
-
-      if (!servicesPanel) {
-        var section = document.createElement("SECTION");
-        section.classList.add("services");
-        watchDiv.append(section);
-      }
-
-      insertServices();
-    }
-  }, 100);
-
-  setTimeout(() => clearInterval(interval), 7000);
+  if (!servicesPanel) {
+    var section = document.createElement("SECTION");
+    section.classList.add("services");
+    watchDiv.append(section);
+  }
+  insertServices();
 };
 
-main();
+const servicePanelAvailable = () => document.getElementById("watch");
+
+window.onload = () => {
+  const panel = document.getElementsByClassName("watch-panel")[0];
+
+  setTimeout(() => {
+    if (!servicePanelAvailable()) {
+      createServicePanel(panel);
+    }
+    main();
+  }, 400);
+};
