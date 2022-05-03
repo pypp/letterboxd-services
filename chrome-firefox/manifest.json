@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Letterboxd Services",
   "description": "Letterboxd extension that provides you torrents for movies.",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",

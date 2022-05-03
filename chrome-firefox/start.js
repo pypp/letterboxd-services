@@ -36,13 +36,19 @@ const getServices = (query, imdbID) => [
   },
 ];
 
-const createServicePanel = (panel) => {
-  document.getElementById("js-poster-col").append(panel);
-};
-
 const getImdbID = () => {
   const url = document.querySelector(".micro-button")?.href;
   return url.split("/")[4];
+};
+
+// disables the script the hides the panel
+const preload = () => {
+  const idk = document.querySelector(
+    "#js-poster-col > div.js-csi.js-hide-in-app"
+  );
+
+  if (idk) idk.className = "";
+  else setTimeout(test, 15);
 };
 
 const addService = (service) => {
@@ -72,9 +78,9 @@ const hideOther = () => {
 
 const getQuery = () => {
   const header = document.getElementById("featured-film-header");
-  const title = header.querySelector("h1").innerText;
-  const year = header.querySelector("p > small > a").innerText;
-  return `${title} ${year}`;
+  const title = header?.querySelector("h1")?.innerText;
+  const year = header?.querySelector("p > small > a")?.innerText;
+  return `${title} ${year || ""}`;
 };
 
 const init = () => {
@@ -102,9 +108,8 @@ const insertServices = () => {
 };
 
 const main = () => {
-  const watchDiv = document.getElementById("watch");
-  if (!watchDiv) return;
-  const servicesPanel = watchDiv.querySelector(".services");
+  const watchDiv = document?.getElementById("watch");
+  const servicesPanel = watchDiv?.querySelector(".services");
 
   if (!servicesPanel) {
     var section = document.createElement("SECTION");
@@ -114,15 +119,8 @@ const main = () => {
   insertServices();
 };
 
-const servicePanelAvailable = () => document.getElementById("watch");
+preload();
 
 window.onload = () => {
-  const panel = document.getElementsByClassName("watch-panel")[0];
-
-  setTimeout(() => {
-    if (!servicePanelAvailable()) {
-      if (panel) createServicePanel(panel);
-    }
-    main();
-  }, 400);
+  main();
 };
