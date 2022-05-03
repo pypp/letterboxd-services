@@ -103,6 +103,7 @@ const insertServices = () => {
 
 const main = () => {
   const watchDiv = document.getElementById("watch");
+  if (!watchDiv) return;
   const servicesPanel = watchDiv.querySelector(".services");
 
   if (!servicesPanel) {
@@ -120,7 +121,7 @@ window.onload = () => {
 
   setTimeout(() => {
     if (!servicePanelAvailable()) {
-      createServicePanel(panel);
+      if (panel) createServicePanel(panel);
     }
     main();
   }, 400);
