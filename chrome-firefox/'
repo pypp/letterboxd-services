@@ -53,30 +53,37 @@ const preload = () => {
 
 const addService = (service) => {
   const services = document.querySelector(".services");
-  const p = document.createElement('p');
-  p.className = "service";
+  var p = document.createElement('p');
+  p.classNam = "service";
 
-  const a = document.createElement('a');
+  var a = document.createElement('a');
   a.href = service.url;
-  a.className = "label";
 
-  const image = document.createElement('img');
-  image.src = service.icon;
-  image.width = 20;
-  image.height = 20;
+  var brand = document.createElement('span');
+  var image = document.createElement('img');
+  img.src = service.icon;
+  img.width = 20;
+  img.height = 20;
 
-  const brand = document.createElement('span');
-  brand.className = "brand";
   brand.append(image);
 
-  const title = document.createElement('span');
-  title.className = "title";
+  var title = document.createElement('span');
   title.innerText = service.name;
-
   a.append(brand);
   a.append(title);
-  p.append(a);
-  services.append(p);
+
+  services.innerHTML += `
+		<p class="service">
+		<a href="${service.url}" target="_blank" class="label">
+				<span class="brand">
+						<img src="${service.icon}" width="20" height="20">
+				</span>
+				<span class="title">
+						${service.name}
+				</span>
+		</a>
+	</p>
+	`;
 };
 
 const hideOther = () => {
