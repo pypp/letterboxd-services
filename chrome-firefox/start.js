@@ -57,6 +57,7 @@ const addService = (service) => {
   p.className = "service";
 
   const a = document.createElement('a');
+  a.setAttribute('target', '_blank');
   a.href = service.url;
   a.className = "label";
 
