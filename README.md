@@ -24,7 +24,7 @@ Letterboxd Services is a Chrome/Firefox extension that will make your life easie
 
 ## How to Use
 
-To use the extension, download it from the Chrome Web Store (it got removed from the chrome webstore, you can still download it [manualy](#manual-installation)) or [Firefox Add-ons Store](https://addons.mozilla.org/he/firefox/addon/letterboxd-services/).  
+To use the extension, download it from the Chrome Web Store (it got removed from the chrome webstore, you can still download it [manualy](#manual-installation)) or [Firefox Add-ons Store](https://addons.mozilla.org/firefox/addon/letterboxd-torrents-provider/).  
 Alternatively, you can also install the extension [manualy](#manual-installation).
 
 ## Supported Providers
