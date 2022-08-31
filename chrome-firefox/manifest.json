@@ -8,15 +8,21 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules_1.json"
+      }
+    ]
+  },
+  "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback"],
   "content_scripts": [
     {
       "run_at": "document_end",
-      "matches": [
-        "https://letterboxd.com/film/*"
-      ],
-      "js": [
-        "start.js"
-      ]
+      "matches": ["https://letterboxd.com/film/*"],
+      "js": ["src/content.js", "src/services.js"]
     }
   ]
 }
