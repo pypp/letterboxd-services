@@ -15,7 +15,7 @@
 
 <br />
 
-![previewv](screenshots/screenshot2.png)
+![preview](screenshots/screenshot2.png)
 <br/>
 
 Idea is taken from [here](https://github.com/Hame-daani/letterboxd_util).
