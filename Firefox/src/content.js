@@ -110,6 +110,11 @@ const main = () => {
     icon: "https://limetorrents.cyou/favicon.ico",
   },
   {
+    name: "TorrentGalaxy",
+    url: `https://torrentgalaxy.to/torrents.php?search=${imdbID}`,
+    icon: "https://torrentgalaxy.to/common/favicon/favicon.ico",
+  },
+  {
     name: "Nyaa",
     url: `https://nyaa.si/?f=0&c=0_0&q=${query}`,
     icon: "https://nyaa.si/static/favicon.png",
@@ -118,7 +123,7 @@ const main = () => {
     name: "YouTube",
     url: `https://www.youtube.com/results?search_query=${query}`,
     icon: "https://www.youtube.com/favicon.ico",
-  },
+  }
 ];
   for (const service of services) addService(service);
 };
