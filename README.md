@@ -71,3 +71,7 @@ Pull requests and issues are welcome.
 3. Click **Temporary Extensions**
 
 4. Click the **Load Temporary Add-on…** and select the **manifest.json** file from the folder **chrome-firefox**.
+
+
+## Contributors
+- [mancube](https://github.com/mancube)
