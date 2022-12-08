@@ -25,6 +25,11 @@ globalThis.getServices = (query, imdbID) => [
     icon: "https://limetorrents.cyou/favicon.ico",
   },
   {
+    name: "TorrentGalaxy",
+    url: `https://torrentgalaxy.to/torrents.php?search=${imdbID}`,
+    icon: "https://torrentgalaxy.to/common/favicon/favicon.ico",
+  },
+  {
     name: "Nyaa",
     url: `https://nyaa.si/?f=0&c=0_0&q=${query}`,
     icon: "https://nyaa.si/static/favicon.png",
