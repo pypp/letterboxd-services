@@ -62,7 +62,7 @@ Pull requests and issues are welcome.
 
 3. Toggle on **Developer mode** checkbox in the top right-hand corner.
 
-4. Click the **Load unpacked extension** button and select the folder **chrome-firefox**.
+4. Click the **Load unpacked extension** button and select the folder **chrome**.
 
 ### Firefox
 
