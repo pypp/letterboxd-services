@@ -39,4 +39,9 @@ globalThis.getServices = (query, imdbID) => [
     url: `https://www.youtube.com/results?search_query=${query}`,
     icon: "https://www.youtube.com/favicon.ico",
   },
+  {
+    name: "Solarmovie",
+    url: `https://solarmovie.pe/search/${query}`,
+    icon: "https://img.solarmovie.pe/xxrz/100x100/100/1e/d6/1ed66c3fd5d717d949289994f35d94c3/1ed66c3fd5d717d949289994f35d94c3.png"
+  }
 ];

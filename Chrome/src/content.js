@@ -30,13 +30,43 @@ const createServiceBrand = (iconSrc) => {
   return brand;
 };
 
-const craeteServiceLink = (serviceURL) => {
+const createServiceLink = (serviceURL) => {
   const a = document.createElement("a");
   a.setAttribute("target", "_blank");
   a.href = serviceURL;
   a.className = "label";
   return a;
 };
+
+/**
+ * Creates a correct solarmovie link. To do this, 
+ * runs the query on the solarmovie service and then extract the first result
+ * in the list and returns the link to the film
+ * @param {String} serviceURL The complete query url to Solarmovie service
+ * @return {String} 
+ */
+const createSolarmovieLink = (serviceURL) => {
+  // Get back the result page of the Solarmovie query
+  const resultPage = fetch(serviceURL)
+    .then((response) => response.text())
+    .then((html) => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, "text/html");
+      return doc;
+    });
+  // Extract the first element with class="flw-item"
+  const firstResult = resultPage.querySelector(".flw-item");
+  // Within that extract the element with class="film-poster"
+  const filmPoster = firstResult.querySelector(".film-poster");
+  // Within that extract the href attribute
+  const filmURL = filmPoster.getAttribute("href");
+
+  const a = document.createElement("a");
+  a.setAttribute("target", "_blank");
+  a.href = filmURL;
+  a.className = "label";
+  return a;
+}
 
 const createServiceTitle = (serviceName) => {
   const title = document.createElement("span");
@@ -45,20 +75,31 @@ const createServiceTitle = (serviceName) => {
   return title;
 };
 
+/**
+ * Adds a service to the services section
+ * @param {*} serviceData The service data object
+ */
 const addService = (serviceData) => {
   const services = document.querySelector(".services");
   const { name, url, icon } = serviceData;
 
   const brand = createServiceBrand(icon);
   const title = createServiceTitle(name);
-  const a = craeteServiceLink(url);
+
+  // If name is 'Solarmovie' run the createSolarmovieLink function
+  if (name === "Solarmovie") {
+    const link = createSolarmovieLink(url);
+  }
+  else {
+    const link = createServiceLink(url);
+  }
 
   const p = document.createElement("p");
   p.className = "service";
 
-  a.append(brand);
-  a.append(title);
-  p.append(a);
+  link.append(brand);
+  link.append(title);
+  p.append(link);
   services.append(p);
 };
 
