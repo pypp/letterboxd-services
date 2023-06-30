@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/1netanel/letterboxd-services.git">
-    <img src="icon.svg" alt="Logo" width="80" height="80">
+    <img src="letterboxd-logo.png" alt="Logo" width="150" height="150">
   </a>  
   
   <h3 align="center">Letterboxd Services</h3>
