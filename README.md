@@ -36,7 +36,7 @@ To use the extension, download it [manualy](#manual-installation).
 - <img src="https://nyaa.si/static/favicon.png" alt="Nyaa" width="16"/> &nbsp; Nyaa
 - <img src="https://www.youtube.com/favicon.ico" alt="YouTube" width="16"/> &nbsp; YouTube
 
-## Example
+## Demo
 
 ![Demo video](screenshots/example.gif)
 
@@ -72,6 +72,6 @@ Pull requests and issues are welcome.
 
 4. Click the **Load Temporary Add-on…** and select the **manifest.json** file from the folder **firefox**.
 
-
 ## Contributors
+
 - [mancube](https://github.com/mancube)
