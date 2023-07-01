@@ -5,11 +5,6 @@ globalThis.getServices = (query, imdbID) => [
     icon: "https://yts.mx/assets/images/website/favicon.ico",
   },
   {
-    name: "Rarbg",
-    url: `https://rarbgtor.org/torrents.php?category=movies&search=${imdbID}`,
-    icon: "https://rarbg.to/favicon.ico",
-  },
-  {
     name: "The Pirate Bay",
     url: `https://thepiratebay.org/search.php?q=${imdbID}&video=on`,
     icon: "https://thepiratebay.org/favicon.ico",
