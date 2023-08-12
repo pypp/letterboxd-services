@@ -24,7 +24,7 @@ Letterboxd Services is a Chrome extension that will make your life easier by pro
 
 ## How to Use
 
-To use the extension, download it [manualy](#manual-installation).
+To use the extension, download it [manually](#manual-installation).
 
 ## Supported Providers
 
