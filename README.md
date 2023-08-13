@@ -39,13 +39,10 @@ To use the extension, download it [manually](#manual-installation).
 
 ![Demo video](screenshots/example.gif)
 
-## License
+## Installation
 
-[MIT](LICENSE)
-
-## Contributing
-
-Pull requests and issues are welcome.
+If you are using Chrome you can download the extension straight from the Chrome Web Store [letterboxd-services](https://chrome.google.com/webstore/detail/letterboxd-services/bapjnacilodfnmciacfljidhhnbbippn).  
+If you are not using chrome or you don't want to install it from the Chrome Web Store, you can also install it [manually](#manual-installation).
 
 ## Manual Installation
 
@@ -70,6 +67,14 @@ Pull requests and issues are welcome.
 3. Click **Temporary Extensions**
 
 4. Click the **Load Temporary Add-on…** and select the **manifest.json** file from the folder **firefox**.
+
+## License
+
+[MIT](LICENSE)
+
+## Contributing
+
+Pull requests and issues are welcome.
 
 ## Contributors
 

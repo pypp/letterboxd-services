@@ -1,0 +1,30 @@
+name: Publish
+
+on: push
+
+# on:
+#   push:
+#     tags:
+#       - "release-*"
+
+jobs:
+  build:
+    name: Publish webextension
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 18
+      - name: Build
+        run: |
+          zip -r extension.zip Chrome/
+      - name: Upload & release
+        uses: mnao305/chrome-extension-upload@v4.0.1
+        with:
+          file-path: extension.zip
+          extension-id: oiofagafohgjohjimdgaggjabocbhckl
+          client-id: ${{ secrets.CLIENT_ID }}
+          client-secret: ${{ secrets.CLIENT_SECRET }}
+          refresh-token: ${{ secrets.REFRESH_TOKEN }}
