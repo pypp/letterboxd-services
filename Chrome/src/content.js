@@ -30,7 +30,7 @@ const createServiceBrand = (iconSrc) => {
   return brand;
 };
 
-const craeteServiceLink = (serviceURL) => {
+const createServiceLink = (serviceURL) => {
   const a = document.createElement("a");
   a.setAttribute("target", "_blank");
   a.href = serviceURL;
@@ -51,7 +51,7 @@ const addService = (serviceData) => {
 
   const brand = createServiceBrand(icon);
   const title = createServiceTitle(name);
-  const a = craeteServiceLink(url);
+  const a = createServiceLink(url);
 
   const p = document.createElement("p");
   p.className = "service";

@@ -17,12 +17,21 @@
       }
     ]
   },
-  "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback"],
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
   "content_scripts": [
     {
       "run_at": "document_end",
-      "matches": ["https://letterboxd.com/film/*"],
-      "js": ["src/content.js", "src/services.js"]
+      "matches": [
+        "https://letterboxd.com/film/*"
+      ],
+      "js": [
+        "src/unblockit.js",
+        "src/services.js",
+        "src/content.js"
+      ]
     }
   ]
 }
