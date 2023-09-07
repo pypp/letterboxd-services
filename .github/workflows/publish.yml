@@ -17,7 +17,7 @@ jobs:
           node-version: 18
       - name: Build
         run: |
-          zip -r extension.zip Chrome/
+          zip -r extension.zip extension/
       - name: Upload & release
         uses: mnao305/chrome-extension-upload@v4.0.1
         with:

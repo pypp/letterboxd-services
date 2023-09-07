@@ -58,19 +58,19 @@ If you are not using chrome or you don't want to install it from the Chrome Web 
 
 3. Toggle on **Developer mode** checkbox in the top right-hand corner.
 
-4. Click the **Load unpacked extension** button and select the folder **chrome**.
+4. Click the **Load unpacked extension** button and select the folder **extension**.
 
 ### Firefox
+
+NOTE: If you are using Firefox version < 109 the extension won't work for you
 
 2. Open Firefox and go to **about:debugging#addons**
 
 3. Click **Temporary Extensions**
 
-4. Click the **Load Temporary Add-on…** and select the **manifest.json** file from the folder **firefox**.
+4. Click the **Load Temporary Add-on…** and select the **manifest.json** file from the folder **extension**.
 
-## License
-
-[MIT](LICENSE)
+5. Go to **about:addons**, find the extension, click on the **Permissions** tab, toggle on the optional permission.
 
 ## Contributing
 
