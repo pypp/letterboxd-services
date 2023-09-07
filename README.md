@@ -79,3 +79,4 @@ Pull requests and issues are welcome.
 ## Contributors
 
 - [mancube](https://github.com/mancube)
+- [leonardovida](https://github.com/leonardovida)
