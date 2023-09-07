@@ -32,6 +32,7 @@ To use the extension, download it [manually](#manual-installation).
 - <img src="https://thepiratebay.org/favicon.ico" alt="1337x" /> &nbsp; The Pirate Bay
 - <img src="https://1337xto.to/images/favicon.ico" alt="1337x" /> &nbsp; 1337x
 - <img src="https://limetorrents.cyou/favicon.ico" alt="Lime Torrents" width="16"/> &nbsp; Lime Torrents
+- <img src="https://torrentgalaxy.to/common/favicon/favicon.ico" alt="TorrentGalaxy" width="16"/> &nbsp; TorrentGalaxy
 - <img src="https://nyaa.si/static/favicon.png" alt="Nyaa" width="16"/> &nbsp; Nyaa
 - <img src="https://www.youtube.com/favicon.ico" alt="YouTube" width="16"/> &nbsp; YouTube
 
