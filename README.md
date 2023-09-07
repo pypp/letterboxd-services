@@ -68,6 +68,8 @@ If you are not using chrome or you don't want to install it from the Chrome Web 
 
 4. Click the **Load Temporary Add-on…** and select the **manifest.json** file from the folder **firefox**.
 
+5. Go to **about:addons**, find the extension, click on the **Permissions** tab, toggle on the optional permission.
+
 ## License
 
 [MIT](LICENSE)

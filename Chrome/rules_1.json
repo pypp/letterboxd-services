@@ -2,10 +2,11 @@
   {
     "id": 1,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "||letterboxd.com/csi/film/*/availability/*",
-      "domains": ["letterboxd.com"]
+      "urlFilter": "||letterboxd.com/csi/film/*/availability/*"
     }
   }
 ]
