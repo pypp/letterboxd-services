@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://github.com/1netanel/letterboxd-services.git">
+  <a href="https://github.com/pypp/letterboxd-services.git">
     <img src="letterboxd-logo.png" alt="Logo" width="150" height="150">
   </a>  
   
