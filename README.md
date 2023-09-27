@@ -20,11 +20,7 @@
 
 Idea is taken from [here](https://github.com/Hame-daani/letterboxd_util).
 
-Letterboxd Services is a Chrome extension that will make your life easier by providing you torrents for movies straight through [letterboxd](https://letterboxd.com/) movie page.
-
-## How to Use
-
-To use the extension, download it [manually](#manual-installation).
+Letterboxd Services is a Chrome extension that will make your life easier by providing you torrents for movies straight through [letterboxd](https://letterboxd.com/) movie page
 
 ## Supported Providers
 
