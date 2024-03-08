@@ -13,13 +13,13 @@ globalThis.getServices = (query, imdbID) => [
   },
   {
     name: "1337x",
-    url: `https://1337x.to/search/${query}/1`,
+    url: `https://1337x.to/search/${query}/1/`,
     icon: "https://1337x.to/favicon.ico",
   },
   {
     name: "Lime Torrents",
     url: `https://limetorrent.xyz/fullsearch?q=${query}`,
-    icon: "https://limetorrents.cyou/favicon.ico",
+    icon: "https://limetorrent.xyz/favicon.ico",
   },
   {
     name: "TorrentGalaxy",
