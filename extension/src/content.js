@@ -4,10 +4,10 @@ const getImdbID = () => {
 };
 
 const getQuery = () => {
-  const header = document.getElementById("featured-film-header");
-  const title = header?.querySelector("h1")?.innerText;
-  const year = header?.querySelector("p > small > a")?.innerText;
-  return `${title} ${year || ""}`;
+  const details = document.querySelector(".details")
+  const title = details?.querySelector("h1")?.innerText;
+  const year = details?.querySelector(".releaseyear > a")?.innerText;
+  return `${title ?? ""} ${year ?? ""}`;
 };
 
 const getFilmData = () => {
