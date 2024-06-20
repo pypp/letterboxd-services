@@ -1,5 +1,12 @@
 const parseTitle = (title) => title.split(" ").join("-").toLowerCase();
 
+/**
+ * Returns an array of custom services data
+ *
+ * @param {string} query
+ * @param {string} IMDb ID
+ * @returns {ServiceData[]} services data
+ */
 globalThis.getServices = (query, imdbID) => [
   {
     name: "Yify",
