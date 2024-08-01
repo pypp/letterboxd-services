@@ -1,5 +1,3 @@
-const parseTitle = (title) => title.split(" ").join("-").toLowerCase();
-
 /**
  * Returns an array of custom services data
  *
@@ -25,8 +23,8 @@ globalThis.getServices = (query, imdbID) => [
   },
   {
     name: "Lime Torrents",
-    url: `https://limetorrent.xyz/fullsearch?q=${query}`,
-    icon: "https://limetorrent.xyz/favicon.ico",
+    url: `https://www.limetorrents.lol/search/all/${query}/`,
+    icon: "https://www.limetorrents.lol/favicon.ico",
   },
   {
     name: "TorrentGalaxy",
@@ -42,10 +40,5 @@ globalThis.getServices = (query, imdbID) => [
     name: "YouTube",
     url: `https://www.youtube.com/results?search_query=${query}`,
     icon: "https://www.youtube.com/favicon.ico",
-  },
-  {
-    name: "Solarmovie",
-    url: `https://solarmovie.pe/search/${parseTitle(query)}`,
-    icon: "https://img.solarmovie.pe/xxrz/100x100/100/1e/d6/1ed66c3fd5d717d949289994f35d94c3/1ed66c3fd5d717d949289994f35d94c3.png",
   },
 ];
