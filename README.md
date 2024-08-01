@@ -36,7 +36,7 @@ If you are not using chrome or you don't want to install it from the Chrome Web 
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/1netanel/letterboxd-services.git
+   git clone https://github.com/pypp/letterboxd-services.git
    ```
 
 ### Chrome
