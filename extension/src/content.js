@@ -22,7 +22,7 @@ const getImdbID = () => {
  */
 const getQuery = () => {
   const details = document.querySelector(".details");
-  const title = details?.querySelector("h1")?.innerText;
+  const title = details?.querySelector(".name")?.innerText;
   const year = details?.querySelector(".releaseyear > a")?.innerText;
   return `${title ?? ""} ${year ?? ""}`;
 };
