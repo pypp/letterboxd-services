@@ -1,31 +1,24 @@
 /**
- * @typedef {Object} ServiceData
- * @property {string} name - The service's name.
- * @property {string} url - The service's search URL.
- * @property {string} icon - The service's icon URL.
- */
-
-/**
  * Parse the page for the film's IMDb ID
  *
  * @returns {string} IMDb ID
  */
-const getImdbID = () => {
+function getImdbID() {
   const url = document.querySelector(".micro-button")?.href;
   return url.split("/")[4];
-};
+}
 
 /**
  * Parse the page for the film's title and release year
  *
  * @returns {string} film's query
  */
-const getQuery = () => {
+function getQuery() {
   const details = document.querySelector(".details");
   const title = details?.querySelector("h1")?.innerText;
   const year = details?.querySelector(".releaseyear > a")?.innerText;
   return `${title ?? ""} ${year ?? ""}`;
-};
+}
 
 /**
  * Creates an image element for the service icon
@@ -33,13 +26,13 @@ const getQuery = () => {
  * @param {string} iconURL
  * @returns {HTMLImageElement} service's icon element
  */
-const createServiceIcon = (iconURL) => {
+function createServiceIcon(iconURL) {
   const image = document.createElement("img");
   image.src = iconURL;
   image.width = 20;
   image.height = 20;
   return image;
-};
+}
 
 /**
  * Create a service brand element
@@ -47,13 +40,13 @@ const createServiceIcon = (iconURL) => {
  * @param {string} iconURL
  * @returns {HTMLSpanElement} service's brand element
  */
-const createServiceBrand = (iconURL) => {
+function createServiceBrand(iconURL) {
   const icon = createServiceIcon(iconURL);
   const brand = document.createElement("span");
   brand.className = "brand";
   brand.append(icon);
   return brand;
-};
+}
 
 /**
  * Returns an anchor element with the service's URL
@@ -61,13 +54,13 @@ const createServiceBrand = (iconURL) => {
  * @param {string} service's URL
  * @returns {HTMLAnchorElement} service's anchor element
  */
-const createServiceLink = (serviceURL) => {
+function createServiceLink(serviceURL) {
   const a = document.createElement("a");
   a.setAttribute("target", "_blank");
   a.href = serviceURL;
   a.className = "label";
   return a;
-};
+}
 
 /**
  * Returns a span element with the service's name
@@ -75,21 +68,20 @@ const createServiceLink = (serviceURL) => {
  * @param {string} service's Name
  * @returns {HTMLSpanElement} service's span element
  */
-const createServiceTitleSpan = (serviceName) => {
+function createServiceTitleSpan(serviceName) {
   const title = document.createElement("span");
   title.className = "title";
   title.innerText = serviceName;
   return title;
-};
+}
 
 /**
  * Adds a service to the services section
  *
  * @param {ServiceData} serviceData
  */
-const addService = (serviceData) => {
-  const services = document.querySelector(".services");
-  const { name, url, icon } = serviceData;
+function addService({ name, url, icon }) {
+  const services = document.querySelector("#watch .services");
 
   const brand = createServiceBrand(icon);
   const title = createServiceTitleSpan(name);
@@ -99,31 +91,71 @@ const addService = (serviceData) => {
   const p = document.createElement("p");
   p.append(serviceURL);
   p.className = "service";
+  services.prepend(p);
+}
 
-  services.append(p);
-};
+function clearServices() {
+  const services = document.querySelector("#watch .services");
+
+  [...services.children].forEach((child) => {
+    if (child.id) {
+      services.removeChild(child);
+    }
+  });
+}
 
 /**
- * Initialize the page to remove the unwanted content and add custom styles
+ * Initialize custom styles
  */
-const initPage = () => {
+function initStyle() {
   const style = document.createElement("style");
   style.textContent = `.services > .service {display: flex !important;}`;
   document.head.append(style);
+}
 
-  const section = document.createElement("section");
-  section.classList.add("services");
-  document.getElementById("watch").replaceWith(section);
-};
-
-window.onload = () => {
-  initPage();
-
+/**
+ * Main function
+ */
+function main() {
+  initStyle();
   const query = getQuery();
   const imdbId = getImdbID();
-
   const services = globalThis.getServices(query, imdbId);
+
   for (const service of services) {
     addService(service);
   }
-};
+}
+
+/**
+ * Waits for the services container to be available in the DOM
+ * then initializes the extension
+ */
+function waitForAvailability() {
+  if (window.__AVAILABILITY_INIT__) return;
+  const container = document.querySelector("#watch .services");
+
+  chrome.storage.local.get("serviceMode", (data) => {
+    if (container) {
+      window.__AVAILABILITY_INIT__ = true;
+
+      if (data.serviceMode === "external") {
+        clearServices();
+      }
+      if (data.serviceMode !== "disabled") {
+        main();
+      }
+    } else {
+      setTimeout(waitForAvailability, 500);
+    }
+  });
+}
+
+waitForAvailability();
+
+// refresh page on mode change
+chrome.storage.onChanged.addListener((changes, area) => {
+  if (area === "local" && changes.serviceMode) {
+    location.reload();
+  }
+});
