@@ -8,8 +8,8 @@
 globalThis.getServices = (query, imdbID) => [
   {
     name: "Yify",
-    url: `https://yts.mx/browse-movies/${query}`,
-    icon: "https://yts.mx/assets/images/website/favicon.ico",
+    url: `https://yts.lt/browse-movies/${query}`,
+    icon: "https://yts.lt/assets/images/website/favicon.ico",
   },
   {
     name: "The Pirate Bay",
