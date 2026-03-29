@@ -1,5 +1,3 @@
-בס"ד
-<br />
 <p align="center">
   <a href="https://github.com/pypp/letterboxd-services.git">
     <img src="letterboxd-logo.png" alt="Logo" width="150" height="150">
@@ -16,16 +14,13 @@
 
 <br />
 
-![preview](screenshots/screenshot1.png)
+![Google Chrome](https://github.com/user-attachments/assets/0543bbc9-9ca3-4d1a-ac40-6e58015b6076)
+
 <br/>
 
 Idea is taken from [here](https://github.com/Hame-daani/letterboxd_util).
 
 Letterboxd Services is a Chrome extension that will make your life easier by providing you torrents for movies straight through [letterboxd](https://letterboxd.com/) movie page
-
-## Demo
-
-![Demo video](screenshots/example.gif)
 
 ## Installation
 
