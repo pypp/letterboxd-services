@@ -70,10 +70,11 @@ Pull requests and issues are welcome.
 
 ## 📈 Star History
 
-<a href="https://www.star-history.com/#pypp/letterboxd-services&type=date&legend=top-left">
+<a href="https://www.star-history.com/?repos=pypp%2Fletterboxd-services&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=pypp/letterboxd-services&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=pypp/letterboxd-services&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=pypp/letterboxd-services&type=date&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=pypp/letterboxd-services&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=pypp/letterboxd-services&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=pypp/letterboxd-services&type=date&legend=top-left" />
  </picture>
 </a>
+
