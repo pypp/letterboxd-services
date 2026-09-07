@@ -8,13 +8,12 @@
   <p align="center">
     Letterboxd Extension that provides you torrents for movies.
     <br/>
-    <br/>
 
 ## 🎬 About The Project
 
 <br />
 
-![Google Chrome](https://github.com/user-attachments/assets/0543bbc9-9ca3-4d1a-ac40-6e58015b6076)
+![Google Chrome](https://github.com/user-attachments/assets/02e92617-078c-4aa1-9350-919e897797b5)
 
 <br/>
 
